@@ -19,18 +19,7 @@ import javafx.scene.control.*;
 public class FXMLDocumentController implements Initializable {
     
     @FXML
-    private Label label;
-    
-    @FXML
-    private TextArea NewItemTextTextArea; 
-    @FXML
-    private TextField NewItemTitleTextField; 
-    @FXML
-    private Button SaveNewItemButton;
-    
-    @FXML
     private void handleSaveNewItem(ActionEvent event) {
-        System.out.println(NewItemTextTextArea.getText());
         
     }
     
@@ -39,7 +28,7 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         /* Remove focus from title field */
-        NewItemTitleTextField.setFocusTraversable(false);        
+        //NewItemTitleTextField.setFocusTraversable(false);        
     }    
     
 }
