@@ -1,7 +1,6 @@
 package diary;
 import diary.model.Entry;
 import diary.view.OverviewController;
-import java.io.IOException;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -10,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class MainApp extends Application {
 
@@ -31,7 +32,7 @@ public class MainApp extends Application {
     }
 
     /**
-     * Returns the data as an observable list of entrys. 
+     * Returns the data as an observable list of entrys.
      * @return
      */
     public ObservableList<Entry> getEntryData() {
@@ -77,7 +78,7 @@ public class MainApp extends Application {
 
             // Set entry overview into the center of root layout.
             rootLayout.setCenter(entryOverview);
-            
+
             // Give the controller access to the main app.
             OverviewController controller = loader.getController();
             controller.setMainApp(this);
